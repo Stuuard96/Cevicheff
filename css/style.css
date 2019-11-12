@@ -15,7 +15,7 @@ html {
     font-size: 18px;
 }
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-size: 1em;
     /* line-height: 20px; */
@@ -171,6 +171,105 @@ li.shopping-cart::before{
     font-weight: normal;
     text-decoration: inherit;
 }  
+
+.main-personal{
+    background-color: #d9d9d9;
+}
+.personal {
+    height: 380px;
+
+    display: flex;
+    align-items: center;
+}
+.personal div {
+    width: 580px
+}
+.personal figure {
+    width: 590px;
+    padding-left: 100px;
+    
+}
+
+.personal img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+.main-arroz-con-mariscos{
+    background-color: #d9d9d9;
+}
+
+.arroz-con-mariscos {
+    height: 320px;
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;   
+}
+
+.arroz-con-mariscos div,
+.arroz-con-mariscos figure {
+    width: 580px
+}
+.arroz-con-mariscos div {
+    padding-left: 100px;
+}
+.arroz-con-mariscos h2 {
+    margin-bottom: 10px;
+}
+.arroz-con-mariscos p {
+    max-width: 480px;
+}
+.arroz-con-mariscos a {
+    padding-right: 30px;
+}
+
+.arroz-con-mariscos img{
+    height: 500x;
+    width: 500px;
+    border-radius: 50%;
+}
+
+
+.main-leche-tigre{
+    background-color: #d9d9d9;
+}
+
+
+.leche-tigre {
+    height: 320px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.leche-tigre div,
+.leche-tigre figure {
+    width: 580px
+}
+.leche-tigre h2 {
+    margin-bottom: 10px;
+}
+.leche-tigre p {
+    max-width: 480px;
+}
+.leche-tigre figure {
+    padding-left: 100px;
+
+    align-self: flex-end;
+}
+.leche-tigre img {
+    display: block;
+}
+.leche-tigre a {
+    padding-right: 30px;
+}
+.leche-tigre img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
 
 
  
