@@ -18,7 +18,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-size: 1em;
-    /* line-height: 20px; */
+    /* line-height: 10px; */
 }
 
 h1 {
@@ -46,10 +46,10 @@ h3:first-child {
     padding-top: 0;
     margin-top: 0;
 }
-/* p {
+p {
     line-height: 20px;
     margin-bottom: 10px;
-} */
+}
 a {
     text-decoration: none;
     
@@ -170,32 +170,58 @@ li.shopping-cart::before{
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-}  
+}
+
+
+.main-section-title{
+    background-color: #d9d9d9;
+}
+.section-title{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #C1C0C0;
+    
+}
+.main-title div{
+    height: 80px;
+}
+
+
 
 .main-personal{
     background-color: #d9d9d9;
 }
 .personal {
-    height: 380px;
+    height: 600px;
 
     display: flex;
     align-items: center;
 }
-.personal div {
+.personal div,figure {
     width: 580px
 }
-.personal figure {
-    width: 590px;
-    padding-left: 100px;
-    
+.personal h2,h3,ul {
+    margin-bottom: 10px;
+}
+.personal ul,h3 {
+    max-width: 480px;   
+}
+.personal li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.personal figure {    
+    padding-left: 100px;   
 }
 
 .personal img{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
 }
-
 
 .main-arroz-con-mariscos{
     background-color: #d9d9d9;
@@ -210,7 +236,8 @@ li.shopping-cart::before{
 
 .arroz-con-mariscos div,
 .arroz-con-mariscos figure {
-    width: 580px
+    width: 580px;
+    
 }
 .arroz-con-mariscos div {
     padding-left: 100px;
@@ -256,8 +283,7 @@ li.shopping-cart::before{
 }
 .leche-tigre figure {
     padding-left: 100px;
-
-    align-self: flex-end;
+    align-self: center;
 }
 .leche-tigre img {
     display: block;
@@ -271,5 +297,69 @@ li.shopping-cart::before{
     border-radius: 50%;
 }
 
+.main-information{
+    background-color: greenyellow;
+}
 
- 
+.information{
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.information div{
+    
+    text-align:center;
+    width: 357.3px;
+}
+
+.information img{
+    text-align: center;
+}
+
+.information figure{
+    margin-left: auto;
+    margin-right: auto;
+   
+    max-height: 150px;
+    max-width: 150px;    
+    margin-bottom: 20px;
+
+}
+
+.information h2{
+    margin-bottom: 20px;
+    text-align:center;
+}
+.information p{
+    line-height: 20px;
+}
+
+.main-footer {
+    background-color: black;
+    padding-top: 53px;
+    padding-bottom: 53px;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer p {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.whatsapp a {
+
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.whatsapp img{
+    border-radius: 50%;
+}
