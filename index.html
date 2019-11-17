@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CEVICHERIA - CEVICHEF</title>
-    
+
+
     <!-- Slider -->
-    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/flexslider.css" > -->
     <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Style -->
@@ -16,13 +17,38 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+    <script src="js/main.js"></script>  
+    
+    
+
 
 
 </head>
 
 <body>
-    <section id="sp-superior">
+    <section class="sp-superior">
+        <div class="main-container">
+            <div class="superior">
+                <figure id="logo">
+                    <img src="img/logomenu.jpg" alt="logo">
+                </figure>
+                <div>
 
+                </div>
+                <h2>"Especialidad en pescados y mariscos"</h2>
+
+                <p>Reservaciones: 266 - 0426 / 472 - 4867 </p>
+                <figure>
+                    <a href="https://www.facebook.com/pages/Cevichef-Huacho/228808660535473" target="_blank"><img
+                            src="img/facebook.png" alt="facebook"></a>
+                </figure>
+            </div>
+        </div>
     </section>
 
     <header class="main-header">
@@ -32,7 +58,9 @@
                     <ul>
                         <li class="home"><a href="#">INICIO</a></li>
                         <li class="history"><a href="#">HISTORIA</a></li>
-                        <li class="blogger"><a href="#">BLOG</a></li>
+                        <li class="blogger"><a href="#"
+                                onclick="$('.main-section-title').animatescroll({scrollSpeed:2000,easing:'easeOutBounce'});">BLOG</a>
+                        </li>
                         <li class="id-card"><a href="#">CONTACTOS</a></li>
                         <li class="shopping-cart"><a href="#"></i>CARTA</a></li>
                     </ul>
@@ -42,30 +70,76 @@
         </div>
     </header>
 
-    <section class="main-flexslider">
+    <section class="main-slides">
         <div class="flexslider">
             <ul class="slides">
+
                 <li>
-                    <img src="img/5.jpg" alt="">
-                    <section class="flex-caption">
-                        <p>BIENVENIDOS A CEVICHEFF</p>
+                    <img src="img/haber5.jpg" alt="">
+                    <section class="caption">
+                        <h2>Lorem slider #1</h2>
                     </section>
                 </li>
+
                 <li>
-                    <img src="img/haber3.jpg" alt="">
-                    <section class="flex-caption">
-                        <p>LOREM IPSUM 2</p>
+                    <img src="img/aasaasddas.jpg" alt="">
+                    <section class="caption">
+                        <h2>Lorem slider #2</h2>
                     </section>
                 </li>
+
                 <li>
-                    <img src="img/haber4.jpg" alt="">
-                    <section class="flex-caption">
-                        <p>LOREM IPSUM 3</p>
+                    <img src="img/ekejejej.jpg" alt="">
+                    <section class="caption">
+                        <h2>Lorem slider #3</h2>
                     </section>
                 </li>
+
             </ul>
         </div>
     </section>
+
+
+
+    <section class="main-information">
+        <div class="main-container">
+            <div class="information">
+                <div>
+                    <figure>
+                        <img src="img/telefono.png" alt="">
+                    </figure>
+                    <h2>Contáctenos</h2>
+                    <p>
+                        Teléfonos: 266 - 0426 / 472 - 4867 <br>
+                        Email: reservaciones@cevicheriarichards.com
+                    </p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="img/reloj.png" alt="">
+                    </figure>
+                    <h2>Horario de atención</h2>
+                    <p>
+                        De Lunes a Domingo
+                        de <br> 11:00 am a 8:00 pm
+                    </p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="img/ubicacion.png" alt="">
+                    </figure>
+                    <h2>Dirección</h2>
+                    <p>
+                        Brigadier Pumacahua 2321
+                        Brigadier Pumacahua 2318
+                        Lince - altura de Canevaro cuadra 9
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 
     <section class="main-section-title">
@@ -148,74 +222,47 @@
         </div>
     </section>
 
-    <section class="main-information">
-        <div class="main-container">
-            <div class="information">
-                <div>
-                    <figure>
-                        <img src="img/eee.png" alt="">
-                    </figure>
-                    <h2>Contáctenos</h2>
-                    <p>
-                            Teléfonos: 266 - 0426 / 472 - 4867 <br>
-                            Email: reservaciones@cevicheriarichards.com
-                    </p>
-                </div>
-                <div>
-                    <figure>
-                            <img src="img/reloj2.png" alt="">
-                    </figure>
-                    <h2>Horario de atención</h2>
-                    <p>
-                            De Lunes a Domingo
-                            de <br> 11:00 am a 8:00 pm
-                    </p>
-                </div>
-                <div>
-                    <figure>
-                        <img src="img/aa.png" alt="">
-                    </figure>
-                    <h2>Dirección</h2>
-                    <p>
-                            Brigadier Pumacahua 2321
-                            Brigadier Pumacahua 2318
-                            Lince - altura de Canevaro cuadra 9 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>  
 
-    
     <div class="whatsapp">
-            <a href="https://wa.me/51938221179?text=Hola mucho gusto cevicheria Cevicheff" target="_blank">
-                <img src="img/whatsapp.png" alt="whatsapp"></a>
+        <a href="https://wa.me/51938221179?text=Hola mucho gusto cevicheria Cevicheff" target="_blank">
+            <img src="img/whatsapp.png" alt="whatsapp"></a>
     </div>
 
     <footer class="main-footer">
-            <div class="main-container">
+        <div class="main-container">
 
-                <div class="footer">
-                   
-                        <p>Inicio | Historia | Blog | Carta | Contacto</p>
-                        <p>© 2019 Cevicheria Cevicheff. Diseñado por Stuard Quiroz</p>
-                    
-                </div>
+            <div class="footer">
+
+                <p>Inicio | Historia | Blog | Carta | Contacto</p>
+                <p>© 2019 Cevicheria Cevicheff. Diseñado por Stuard Quiroz</p>
+
             </div>
-        </footer>
-        
+        </div>
+    </footer>
 
-        <!-- footer -->
+
+    <!-- footer -->
 
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/69ec3f3a5f.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
 
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="js/jquery.flexslider.js"></script>
+    <!-- CDN ➡️ https://code.jquery.com/ -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+
+    <!-- flexslider -->
+    <!-- <script src="js/jquery.flexslider-min.js"></script> -->
+    <!-- app.js -->
     <script src="js/app.js"></script>
-    <script type="text/javascript" charset="utf-8"></script>
+
+    <!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+
+    <script src="js/animatescroll.min.js"></script>
+
+
 
 </body>
 

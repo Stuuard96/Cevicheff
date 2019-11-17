@@ -5,3 +5,9 @@ $(window).load(function() {
     	pauseOnHover: false,
     });
   });
+
+  $(document).ready(function() {
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });

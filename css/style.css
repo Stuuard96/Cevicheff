@@ -108,14 +108,14 @@ ol {
 
 /* header */
 .main-header {
-    background-color: var(--primary-background);
+    background-color: #000
 }
 .header {
     height: 78px;
     border-bottom: 2px solid #000;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     align-items: center;
 }
 .header h3 {
@@ -126,13 +126,21 @@ ol {
     align-items: center;
 }
 .header li:not(:last-child) {
-    margin-right: 17px;
+    margin-right: 100px;
+}
+.header li{
+    color: var(--color-white);
 }
 .header a {
-    color: var(--color-black);
+    
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 21px;
+    color: var(--color-white);
+    text-transform: uppercase;
 }
 li.home::before{
-    
+    padding: 10px;
     content: "\f015"; 
     font-family: FontAwesome;
     font-style: normal;
@@ -140,7 +148,7 @@ li.home::before{
     text-decoration: inherit;
 }
 li.history::before{
-    
+    padding: 10px;
     content: "\f251"; 
     font-family: FontAwesome;
     font-style: normal;
@@ -148,7 +156,7 @@ li.history::before{
     text-decoration: inherit;
 }
 li.blogger::before{
-    
+    padding: 10px;
     content: "\f37c"; 
     font-family: FontAwesome;
     font-style: normal;
@@ -156,7 +164,7 @@ li.blogger::before{
     text-decoration: inherit;
 }
 li.id-card::before{
-    
+    padding: 10px;    
     content: "\f2c2"; 
     font-family: FontAwesome;
     font-style: normal;
@@ -164,7 +172,7 @@ li.id-card::before{
     text-decoration: inherit;
 }
 li.shopping-cart::before{
-    
+    padding: 10px;
     content: "\f07a"; 
     font-family: FontAwesome;
     font-style: normal;
@@ -174,7 +182,7 @@ li.shopping-cart::before{
 
 
 .main-section-title{
-    background-color: #d9d9d9;
+    background-color: #C1C0C0;
 }
 .section-title{
     height: 80px;
@@ -224,7 +232,7 @@ li.shopping-cart::before{
 }
 
 .main-arroz-con-mariscos{
-    background-color: #d9d9d9;
+    background-color: #C1C0C0;
 }
 
 .arroz-con-mariscos {
@@ -298,7 +306,17 @@ li.shopping-cart::before{
 }
 
 .main-information{
-    background-color: greenyellow;
+    
+    background-color: #FFF;
+    background-image:   linear-gradient(0deg, #000 0%, #FFF 90%), 
+                                url("../img/fondo14.jpg");
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    
+    
 }
 
 .information{
@@ -306,12 +324,15 @@ li.shopping-cart::before{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    
 }
 
 .information div{
     
     text-align:center;
     width: 357.3px;
+    
 }
 
 .information img{
@@ -321,7 +342,7 @@ li.shopping-cart::before{
 .information figure{
     margin-left: auto;
     margin-right: auto;
-   
+    
     max-height: 150px;
     max-width: 150px;    
     margin-bottom: 20px;
@@ -331,15 +352,17 @@ li.shopping-cart::before{
 .information h2{
     margin-bottom: 20px;
     text-align:center;
+    color: white;
 }
 .information p{
     line-height: 20px;
+     color: white;
 }
 
 .main-footer {
     background-color: black;
-    padding-top: 53px;
-    padding-bottom: 53px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 .footer {
     display: flex;
@@ -354,8 +377,8 @@ li.shopping-cart::before{
 
 .whatsapp a {
 
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -363,3 +386,49 @@ li.shopping-cart::before{
 .whatsapp img{
     border-radius: 50%;
 }
+
+.sp-superior{
+    background-color: var(--primary-background);
+}
+.superior{
+    
+    height: 100px;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+
+}
+
+
+
+.superior figure{
+    width: 40px;
+    height: 40px;
+    /* margin-left: auto;
+    margin-right: auto; */
+       
+}
+
+.superior p{
+    font-weight: 900;
+    font-size: 16px;
+    
+}
+.superior h2{
+    font-weight: 900;
+    font-size: 16px;
+    margin-left: 100px;
+}
+
+#logo{
+    position: absolute;
+    
+    padding-top: 35px;
+    height: 150px;
+    width: 150px;
+}
+
+#logo img{
+    border-radius: 50%;
+}
+
