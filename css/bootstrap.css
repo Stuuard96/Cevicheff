@@ -379,9 +379,9 @@ h3, .h3 {
   font-size: 1.75rem;
 }
 
-h4, .h4 {
+/* h4, .h4 {
   font-size: 1.5rem;
-}
+} */
 
 h5, .h5 {
   font-size: 1.25rem;
@@ -3405,7 +3405,7 @@ input[type="button"].btn-block {
 }
 
 .input-group {
-  position: relative;
+  /* position: relative; */
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -3419,7 +3419,7 @@ input[type="button"].btn-block {
 .input-group > .form-control-plaintext,
 .input-group > .custom-select,
 .input-group > .custom-file {
-  position: relative;
+  /* position: relative; */
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   width: 1%;
