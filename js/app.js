@@ -1,12 +1,3 @@
-
-  // AnimateScroll
-  $(document).ready(function(){
-    $('.blogger').click(function(){
-      $('.main-section-title').animatescroll({scrollSpeed:2000,easing:'easeOutBack'})
-    });
-  });
-
-  // ScrollUp
   $(document).ready(function(){
     $.scrollUp({
       scrollName: 'scrollUp', // Element ID
@@ -19,14 +10,16 @@
       activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
     });
   });
+  // ScrollUp
 
-  // Slider
+  
   $(document).ready(function () {
     $('.flexslider').flexslider({
         animation: "slide",
         controlNav: "thumbnails",
     });
 });
+// Slider
 
 
   $(document).ready(function mapGoogle() {
@@ -73,3 +66,4 @@ function main () {
 		$(this).children('.children').slideToggle();
 	});
 }
+// Api google

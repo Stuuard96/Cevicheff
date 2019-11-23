@@ -6,40 +6,38 @@
 *
 */
 
-/* Font */
-
-
 /* Typography */
-
 html {
     font-size: 18px;
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1em;
-    /* line-height: 10px; */
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 50px;
+    font-weight: 700;
 }
 h2 {
+    font-family: 'Satisfy', cursive;
     font-size: 40px;
     line-height: 42px;
+    font-weight: 100;
 }
 h3 {
-    font-size: 22px;
+    font-size: 32px;
     line-height: 20px;
+    font-weight: 500; 
 }
-h1,
-h2 {
-    font-weight: 700;   
+h4{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
 }
-h3 {
-    font-weight: 500;   
-}
+
 h1:first-child,
 h2:first-child,
 h3:first-child {
@@ -49,11 +47,10 @@ h3:first-child {
 }
 p {
     line-height: 20px;
-    /* margin-bottom: 10px; */
 }
+
 a {
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 
 /****************
@@ -61,15 +58,17 @@ General
 ****************/
 :root { 
     /* color */
-    
-
     --color-white: #FFF;
     --color-black: #000; 
     
     /* background */
     --primary-background: #f5c019;
-    --secondary-background: #F2F2F2;
-} 
+    --secondary-background: #d9d9d9;
+    --tertiary-background:  #C1C0C0;
+    --quaternary-background: #000;
+    --quintary-background: #FFF;
+}
+
 *,
 *:after,
 *::after,
@@ -79,8 +78,6 @@ General
 }
 
 img {
-    
-    /* padding-top: 140px; */
     max-width: 100%;
     height: auto;
 }
@@ -93,18 +90,13 @@ ul{
     margin: 0;
 }
 
-/* header */
-
- 
-/* body {background:#000;} */
- 
+/* header */ 
 .menu_bar {
 	display:none;
 }
- 
 header {
     width: 100%;
-    background-color: #000;
+    background: var(--quaternary-background);
 }
 .heav img{
     width: 220px;
@@ -120,67 +112,42 @@ header {
     
     align-self: center;
 }
-
-
- 
 header nav {
-    /* align-items: center; */
-	background:#000;
+	background: var(--quaternary-background);
 	z-index:1000;
-	/* max-width: 1000px;
-    width:95%; */
 }
- 
 header nav ul {
     list-style:none;
-    /* padding-top: 30px;
-    padding-bottom: 20px; */
-    /* padding-left: 15px; */
 }
- 
 header nav ul li {
 	display:inline-block;
 	position: relative;
 }
-
 header nav ul li:hover {
-	background:#f5c019;
+	background: var(--primary-background);
 }
- 
 header nav ul li a {
-	color:#fff;
+	color: var(--color-white);
 	display:block;
 	text-decoration:none;
     padding: 15px;
     text-transform: uppercase;
 }
- 
 header nav ul li a span {
 	margin-right:10px;
 }
- 
 header nav ul li:hover .children {
 	display:block;
 }
- 
 header nav ul li .children {
 	display: none;
-	background:#011826;
 	position: absolute;
 	width: 150%;
 	z-index:1000;
-}
- 
-header nav ul li .children li {
-	display:block;
-	overflow: hidden;
-	border-bottom: 1px solid rgba(255,255,255,.5);
-}
- 
+} 
 header nav ul li .children li a {
 	display: block;
 }
- 
 header nav ul li .children li a span {
 	float: right;
 	position: relative;
@@ -188,7 +155,6 @@ header nav ul li .children li a span {
 	margin-right:0;
 	margin-left:10px;
 }
- 
 header nav ul li .caret {
 	position: relative;
 	top:3px;
@@ -196,11 +162,7 @@ header nav ul li .caret {
 	margin-right:0px;
 }
 
-
-.menu li {
-    line-height: 20px;
-    margin-bottom: 0;
-}
+/* Container */
 .main-container {
     max-width: 1200px;
     width: 100%;
@@ -208,57 +170,44 @@ header nav ul li .caret {
     margin: 0 auto;
 }
 
+/* Section-Title */
 .main-section-title{
-    background-color: #C1C0C0;
+    background: var(--tertiary-background);
 }
 .section-title{
-    height: 80px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #C1C0C0;
-    
-}
-.main-title div{
-    height: 80px;
 }
 
 
-
-
-
+/* Section-Personal */
 .main-personal{
-    background-color: #d9d9d9;
+    background: var(--secondary-background);
 }
-
 .personal {
-    min-height: 630px;
+    min-height: 700px;
     display: flex;
     flex-direction: row-reverse;
 }
-
 .personal figure {
     max-width: 580px;
     width: 49.152542373%;
     align-self: center;
     padding-left: 70px;
 }
-
 .personal img{
     width: 500px;
     border-radius: 50%;
 }
-
-.personal .personal-description{
-    
+.personal .personal-description{   
     width: 49.152542373%;  
     display: flex;
     align-items: center;
 }
-
 .personal-description div{
-    max-width: 500px;
-    
+    max-width: 500px;   
 }
 .personal li{
     margin-bottom: 10px;
@@ -270,135 +219,152 @@ header nav ul li .caret {
 }
 
 
-
-
-
-.main-arroz-con-mariscos{
-    background-color: #C1C0C0;
+/* Section-Ceviche-Mixto */
+.main-ceviche-mixto{
+    background: var(--tertiary-background);
 }
-
-.arroz-con-mariscos {
+.ceviche-mixto {
     min-height: 400px;
     display: flex;
 }
-
-.arroz-con-mariscos figure {
+.ceviche-mixto figure {
     max-width: 580px;
     width: 49.152542373%;
     align-self: center;
 }
-
-.arroz-con-mariscos img{
+.ceviche-mixto img{
     width: 500px;
     border-radius: 50%;
 }
-
-.arroz-con-mariscos .mariscos-description{
+.ceviche-mixto .ceviche-description{
     width: 49.152542373%;  
     display: flex;
     align-items: center;
-    padding-left: 100px;
-     
+    padding-left: 100px;    
 }
-.mariscos-description div{
+.ceviche-description div{
     max-width: 500px;    
 }
 
 
-
-
+/* Section-Leche-Tigre */
 .main-leche-tigre{
-    background-color: #d9d9d9;
+    background: var(--secondary-background);
 }
 .leche-tigre {
     min-height: 400px;
     display: flex;
     flex-direction: row-reverse;
 }
-
 .leche-tigre figure {
     max-width: 580px;
     width: 49.152542373%;
     align-self: center;
     padding-left: 70px;
 }
-
 .leche-tigre img{
     border-radius: 50%;
 }
-
-.leche-tigre .leche-description{
-    
+.leche-tigre .leche-description{   
     width: 49.152542373%;  
     display: flex;
     align-items: center;
-    
 }
-
 .leche-description div{
     max-width: 500px;
 }
 
 
-/* .main-leche-tigre{
-    background-color: #d9d9d9;
+/* Section-Historia */
+.main-historia{
+    background-color: var(--primary-background);
 }
-
-
-.leche-tigre {
-    height: 320px;
+.historia{
+    min-height: 540px;
     display: flex;
-    align-items: center;
-    
 }
-
-.leche-tigre div,
-.leche-tigre figure {
-    width: 580px
-}
-.leche-tigre h2 {
-    margin-bottom: 10px;
-}
-.leche-tigre p {
-    max-width: 480px;
-}
-.leche-tigre figure {
-    padding-left: 100px;
+.historia figure {
+    max-width: 448px;
+    width: 37.9661016949%;
     align-self: center;
 }
-.leche-tigre img {
-    display: block;
+.historia .historia-description{
+    max-width: 732px;
+    width: 65.4237288136%;  
+    display: flex;
+    align-items: center;
 }
-.leche-tigre a {
-    padding-right: 30px;
+.historia-description div{
+    max-width: 605px;
+    padding-left: 58px; 
 }
-.leche-tigre img{
-    height: 300px;
-    width: 300px;
+.historia-description h2{
+    text-align: center;
+}
+.historia-description p{
+    text-align: justify;
+}
+
+
+/* Section-Title */
+.main-carta{
+    background: var(--primary-background); 
+}
+.title-section{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 80px;
+}
+.title-section h2{
+    font-size: 50px;
+}
+
+
+/* Section-Contacto */
+.map-google {
+    width: 100%;
+    height: 600px;
+    outline:1px solid #000; 
+}
+.main-contacto{
+    background-color: var(--primary-background);
+}
+.contacto{
+    padding-bottom: 30px;
+}
+
+
+
+/* Imagen-Whatsapp */
+.whatsapp a {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.whatsapp img{
     border-radius: 50%;
 }
- */
 
 
 
+/* Footer-Container */
 .footer-columna{
     text-align: center;
 }
-
 .footer-container {
     width: 100%;
-    background-color: #FFF;
+    background: var(--quintary-background);
     background-image:   linear-gradient(0deg, #000 0%, #FFF 100%), 
-                                url("../img/fondo14.jpg");
+                                url("../img/backfondo.jpg");
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 50%;
-	/* background: #272727; */
-	color: #fff;
+	color: var(--color-white);
 }
-
 .footer-main {
 	width: 98%;
 	max-width: 1000px;
@@ -413,26 +379,18 @@ header nav ul li .caret {
     margin-left: auto;
     margin-right: auto;
 }
-
 .footer-main .footer-columna {
 	width: calc(100% / 3);
-	/* text-align: justify; */
 }
-
-
 .footer-main .footer-columna:nth-child(2) {
 	padding: 0 20px;
 }
-
 .footer-main .footer-columna h3 {
 	font-size: 32px;
-	color: #FFF;
+	color: var(--color-white);
     margin-bottom: 20px;
     line-height: 1;
-    /* text-align: center; */
 }
-
-
 .footer-main .footer-columna input[type="email"] {
 	border: none;
 	width: 100%;
@@ -441,7 +399,6 @@ header nav ul li .caret {
 	padding: 10px;
 	font-family: Raleway;
 }
-
 .footer-main .footer-columna input[type="submit"] {
 	border: none;
 	background: #00C6EE;
@@ -452,7 +409,6 @@ header nav ul li .caret {
 	cursor: pointer;
 	font-family: Raleway;
 }
-
 .footer-main .footer-columna span p {
     display: inline-block;
     margin-left: 5px;
@@ -461,12 +417,13 @@ header nav ul li .caret {
 	font-family: Raleway;
 }
 
+
+
+/* Footer */
 .footer-copy-redes {
 	width: 100%;
-	background: #000;
-	/* border-top: 3px solid #fff; */
+	background: var(--quaternary-background);
 }
-
 .main-copy-redes {
 	width: 98%;
 	max-width: 1000px;
@@ -478,20 +435,16 @@ header nav ul li .caret {
 	-ms-align-items: center;
 	align-items: center;
 }
-
 .main-copy-redes .footer-copy {
 	width: 70%;
-	color: #fff;
+	color: var(--color-white);
 }
-
 .main-copy-redes .footer-redes {
 	width: 30%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-
-
 .main-copy-redes .footer-redes a {
 	display: inline-block;
 	text-decoration: none;
@@ -499,200 +452,43 @@ header nav ul li .caret {
 	height: 40px;
 	line-height: 40px;
 	border-radius:50%;
-	background: #fff;
-	color: #000;
+	background: var(--quintary-background);
+	color: var(--color-black);
 	text-align: center;
 }
 
 
-@media screen  and (max-width: 750px) {
-	.info-main {
-		padding: 30px 100px;
-	}
 
-	.footer-main .footer-columna {
-		padding: 0 10px;
-	}
-
-	.footer-main .footer-columna h3 {
-        font-size: 28px;
-        line-height: 1;
-	}
-
-	.footer-main .footer-columna p {
-		font-size: 14px;
-	}
-}
-
-@media screen  and (max-width: 640px) {
-	.info-main {
-		padding: 30px 30px;
-	}
-
-	.info-main h3 {
-		font-size: 30px;
-	}
-
-	.footer-main {
-		padding: 10px 0;
-	}
-
-	.footer-main .footer-columna {
-		width: 100%;
-		text-align: center;
-		margin: 10px 0;
-	}
-
-	.footer-main .footer-columna h3 {
-		margin-bottom: 5px;
-	}
-
-	.footer-main .footer-columna span {
-		display: block;
-	}
-	
-	.main-copy-redes .footer-copy {
-		width: 100%;
-		text-align: center;
-		margin-bottom: 20px;
-	}
-
-	.main-copy-redes .footer-redes {
-		width: 80%;
-		margin: auto;
-	}
-
-}
-
-
-
-
-
-
-
-
-
-.main-footer {
-    background-color: black;
-    padding-top: 45px;
-    padding-bottom: 45px;
-}
-.footer {
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer p {
-    color: white;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.whatsapp a {
-
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-.whatsapp img{
-    border-radius: 50%;
-}
-
-
-
-.main-historia{
-    background-color: var(--primary-background);
-}
-
-.historia{
-    min-height: 540px;
-    display: flex;
-}
-
-.historia figure {
-    max-width: 448px;
-    width: 37.9661016949%;
-    align-self: center;
-}
-
-.historia .historia-description{
-    max-width: 732px;
-    width: 65.4237288136%;  
-    display: flex;
-    align-items: center;
-}
-
-.historia-description div{
-    max-width: 605px;
-    padding-left: 58px; 
-}
-
-.historia-description h2{
-    text-align: center;
-}
-.historia-description p{
-    text-align: justify;
-}
-
-
-
-.main-carta{
-    background-color: #f5c019;
-}
-
-.title-section{
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-.map-google {
-    width: 100%;
-    height: 600px;
-    outline:1px solid #000; 
-}
-
-.main-contacto{
-    background-color: #f5c019;
-}
-.contacto{
-    padding-bottom: 30px;
-}
-
-
-
-
- 
+/****************
+Media Querie
+****************/
 @media screen and (max-width: 800px) {
-	body {
+    body {
 		padding-top:80px;
-	}
- 
+    }
+    /* Header */
 	.menu_bar {
 		display:block;
 		width:100%;
 		position: fixed;
         top:0;
         left:0;
-		background:crimson;
+		background: crimson;
 	}
- 
 	.menu_bar .bt-menu {
 		display: block;
 		padding: 20px;
-		color: #fff;
+		color: var(--color-white);
 		overflow: hidden;
 		font-size: 25px;
 		font-weight: bold;
 		text-decoration: none;
-	}
- 
+    }
+
 	.menu_bar span {
 		float: right;
 		font-size: 40px;
 	}
- 
 	header nav {
 		width: 80%;
 		height: calc(100% - 80px);
@@ -710,11 +506,9 @@ header nav ul li .caret {
 		display: block;
 		border-bottom:1px solid rgba(255,255,255,.5);
 	}
- 
 	header nav ul li a {
 		display: block;
 	}
- 
 	header nav ul li:hover .children {
 		display: none;
 	}
@@ -731,6 +525,15 @@ header nav ul li .caret {
 	header nav ul li .caret {
 		float: right;
     }
+
+
+
+    /* Section-Title */
+    .section-title h1{
+        font-size: 34px;
+    }
+    
+    /* Section-Historia */
     .historia{
         flex-direction: column-reverse;
         padding-top: 80px;
@@ -749,6 +552,7 @@ header nav ul li .caret {
         max-width: initial;
     }
 
+    /* Section-Personal */
     .personal {
         flex-direction: column-reverse;
         padding-top: 80px;
@@ -766,7 +570,6 @@ header nav ul li .caret {
         width: 100%;
         padding-left: 0;
         text-align: center;
-        /* padding-left: 100px; */
     }
     .personal-description div {
         max-width: initial;
@@ -774,28 +577,28 @@ header nav ul li .caret {
         
     }
 
-
-    .arroz-con-mariscos {
+    /* Section-Ceviche */
+    .ceviche-mixto {
         flex-direction: column-reverse;
         padding-top: 80px;
     }
-    .arroz-con-mariscos figure {
+    .ceviche-mixto figure {
         padding-top: 30px;
         padding-bottom: 30px;
         align-self: center;
     }
     
-    .arroz-con-mariscos .mariscos-description {
+    .ceviche-mixto .ceviche-description {
         width: 100%;
         padding-left: 0;
         text-align:center;
     }
-    .mariscos-description div {
+    .ceviche-description div {
         max-width: initial;
     }
 
     
-
+    /* Section-Leche-Tigre */
     .leche-tigre {
         flex-direction: column-reverse;
         padding-top: 80px;
@@ -817,4 +620,59 @@ header nav ul li .caret {
     }
     
 }
+
+
+
+@media screen  and (max-width: 750px) {
+
+    /* Section-Footer-Container */
+	.footer-main .footer-columna {
+		padding: 0 10px;
+	}
+
+	.footer-main .footer-columna h3 {
+        font-size: 28px;
+        line-height: 1.2;
+	}
+
+	.footer-main .footer-columna p {
+		font-size: 14px;
+	}
+}
+
+
+
+@media screen  and (max-width: 640px) {
+
+    /* Section-Footer-Container */
+	.footer-main {
+		padding: 10px 0;
+	}
+
+	.footer-main .footer-columna {
+		width: 100%;
+		text-align: center;
+		margin: 10px 0;
+	}
+
+	.footer-main .footer-columna span {
+		display: block;
+	}
+    
+    /* Footer */
+	.main-copy-redes .footer-copy {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.main-copy-redes .footer-redes {
+		width: 80%;
+		margin: auto;
+	}
+
+}
+
+
+
+
 
